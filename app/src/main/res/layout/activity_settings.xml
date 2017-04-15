@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codefiti.happymoments.SettingsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#8bc34a"
+            android:id="@+id/toolbar">
+
+            <ImageButton
+                android:id="@+id/hamburgerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_hamburger"
+                android:background="#8bc34a"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Happy Moments"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:id="@+id/toolbar_title"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            tools:openDrawer="start">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anlık Bildirim"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#8BC34A"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biri size harçlık gönderdiği zaman"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Haftalık Bildirim"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#8BC34A"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Haftalık etkinliklerimiz hakkında gelecek bildirimler"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seçisel Bildirim"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#8BC34A"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sana harçlık gönderen biri kumbara açtığında"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pinButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFCB2E">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pini değiştir"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/freezeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFE5E5E">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hesabı dondur"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                android:clickable="true"
+                app:menu="@menu/hamburger" />
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

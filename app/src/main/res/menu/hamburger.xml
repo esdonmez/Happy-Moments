@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Anasayfa" />
+        <item
+            android:id="@+id/nav_creditcards"
+            android:icon="@drawable/creditcard"
+            android:title="Kredi Kartlarım" />
+        <item
+            android:id="@+id/nav_howtouse"
+            android:icon="@drawable/howtouse"
+            android:title="Nasıl Çalışır" />
+        <item
+            android:id="@+id/nav_sss"
+            android:icon="@drawable/sss"
+            android:title="Sıkça Sorulan Sorular"/>
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="İletişim"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Ayarlar" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Çıkış Yap"/>
+    </group>
+
+</menu>

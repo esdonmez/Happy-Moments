@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/addNewCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/topCard"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="#8bc34a">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yeni Kart Ekle"
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:layout_marginLeft="5sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomCard"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="#dddddd"
+            android:layout_alignBottom="@+id/topCard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yeni kart eklemek için tıklayın."
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

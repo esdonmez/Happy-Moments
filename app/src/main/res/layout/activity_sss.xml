@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codefiti.happymoments.SSSActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#8bc34a"
+            android:id="@+id/toolbar">
+
+            <ImageButton
+                android:id="@+id/hamburgerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_hamburger"
+                android:background="#8bc34a"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Happy Moments"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:id="@+id/toolbar_title"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            tools:openDrawer="start">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingRight="@dimen/fab_margin"
+                android:paddingTop="@dimen/fab_margin">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Hesabımı nasıl kapatabilirim?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Hesabımı tekrar aktifleştirmek için ne yapmalıyım?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Hesabım başkası tarafında çalınmış durumda, hesabımı nasıl kurtarabilirim?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text=""
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Kayıtlı kredi kartlarım güvence altında mı?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Tarihi geçen ve kullanmadığım hediye çeklerime ne olur?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Hediye çeklerimi iptal etmem mümkün müdür?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Uygulamaya giriştebelirlediğim 4 haneli pin kodu ne işe yarıyor?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Birden fazla önemli gelişme paylaşırsam, arkadaşlarım hepsini görür mü?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#B4B4B4"
+                                android:layout_marginTop="10dp">
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/ssstop9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#EDEDED">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="0dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="#585858"
+                                        android:text="Hesabım sistem tarafından bloke edildi ne yapmalıyım?"/>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/text9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#585858"
+                                    android:text="esd"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                android:clickable="true"
+                app:menu="@menu/hamburger" />
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

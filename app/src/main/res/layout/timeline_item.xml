@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/imgTimeline_Profile"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_margin="1sp"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageView
+            android:id="@+id/imgTimeline_IsPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtTimeline_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#ffff5555"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgTimeline_Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

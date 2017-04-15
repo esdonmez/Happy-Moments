@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2sp">
+
+        <ImageView
+            android:id="@+id/imgWallet_CoverImage"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtWallet_Money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFECF0F1"
+            android:layout_marginRight="30sp"
+            android:layout_gravity="end"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtWallet_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:layout_gravity="end"
+            android:textAlignment="viewEnd"
+            android:textColor="#ffff5555"
+            android:layout_centerVertical="true"
+            android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtWallet_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30sp"
+                android:layout_gravity="end"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFECF0F1"
+                android:layout_centerVertical="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
